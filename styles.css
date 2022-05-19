@@ -277,3 +277,35 @@ img{
   padding: 12px;
   margin-left: 20px;
 }
+
+
+
+.collection{
+  background-color: white;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 100px;
+  gap: 20px;
+}
+.collection-item{
+  display: flex;
+  flex-direction: column;
+  width: 280px;    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.collection-item-content{
+  background-color: moccasin;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;  
+}
+.collection-item-content img{
+  max-width: auto;
+  min-height: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
