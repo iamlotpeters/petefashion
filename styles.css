@@ -220,9 +220,10 @@ header{
   justify-content: space-between;  
   padding: 80px
 }
-img{
+.feature img{
   width: 100%;
   height: auto;
+  border-radius: 20px;
 }
 
 .feature-right{
@@ -308,4 +309,128 @@ img{
   min-height: auto;
   object-fit: contain;
   cursor: pointer;
+}
+
+
+
+
+
+/* IPAD Screen */
+@media screen and (max-width: 992px) {
+  .center{
+    display: none;
+  }
+  
+  .showcase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .showcase-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .showcase-title h1{
+    font-size: 60px;
+    width: 100%;
+  }
+
+  .order{
+    width: 90%;
+    font-size: 12px;
+  }
+
+
+  .trending{
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .trending-left{
+    margin-bottom: 40px;
+  }
+
+
+  .feature{
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .feature-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+
+  .collection{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+
+@media screen and (max-width: 782px) {
+  .right{
+    display: none;
+  }
+
+  .showcase{
+    width: 100%;
+    padding: 15px;
+  }
+  .showcase-title{
+    width: 100%;
+  }
+  .showcase-title h1{
+    font-size: 40px;
+    width: 100%;
+  }
+  .showcase-content{
+    width: 100%;
+  }
+
+
+  .order{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    font-size: 20px;
+  }
+
+  .trending .trending-right{
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .trending-right-item{
+    margin-bottom: 20px;
+  }
+
+
+
+
+  .feature .feature-right-wrapper{
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+  .feature-right-item{
+    margin-bottom: 20px;
+  }
+
+
+  .collection{
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
