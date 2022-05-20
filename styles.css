@@ -378,7 +378,7 @@ header{
 
 
 
-@media screen and (max-width: 782px) {
+@media screen and (max-width: 768px) {
   .right{
     display: none;
   }
